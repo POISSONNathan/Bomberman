@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 584
-    y: 242.40001
-    width: 600.8
-    height: 567.2
-  m_ShowMode: 0
-  m_Title: Input (Input Actions)
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 600, y: 321}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,62 +19,12 @@ MonoBehaviour:
     width: 2737.6
     height: 1054.4
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 5}
+  m_Title: Game
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InputActionEditorWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 600.8
-    height: 567.2
-  m_MinSize: {x: 600, y: 321}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 600.8
-    height: 567.2
-  m_MinSize: {x: 600, y: 321}
-  m_MaxSize: {x: 4000, y: 4021}
-  vertical: 0
-  controlID: 4327
---- !u!114 &5
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +37,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
-  - {fileID: 8}
-  - {fileID: 7}
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -126,7 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &6
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &7
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +95,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,8 +108,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 15}
+  - {fileID: 6}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -193,8 +119,8 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 136
---- !u!114 &9
+  controlID: 18
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,8 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 14}
+  - {fileID: 7}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -218,8 +144,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 137
---- !u!114 &10
+  controlID: 19
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,9 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 11}
-  - {fileID: 12}
-  - {fileID: 13}
+  - {fileID: 8}
+  - {fileID: 9}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -244,8 +170,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 138
---- !u!114 &11
+  controlID: 223
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,12 +192,12 @@ MonoBehaviour:
     height: 594.4
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,16 +214,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 328.8
     y: 0
-    width: 1040.8
+    width: 1040
     height: 594.4
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 19}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,18 +238,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1369.6
+    x: 1368.8
     y: 0
-    width: 721.6
+    width: 722.3999
     height: 594.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 20}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &14
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,13 +270,13 @@ MonoBehaviour:
     height: 410
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 21}
   - {fileID: 17}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &15
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,203 +297,12 @@ MonoBehaviour:
     height: 1004.4
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb55afc2c109f42f2af37941a8c9300e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 600, y: 300}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Input (Input Actions)
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 584
-    y: 242.40001
-    width: 600.8
-    height: 546.2
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_ActionMapsTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3944ee96
-    m_LastClickedID: -1762769863
-    m_ExpandedIDs: 00000000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-  m_ActionsTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c1dfc47
-    m_LastClickedID: 1207704892
-    m_ExpandedIDs: cc7267d625ad0dfd8561cdff
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-  m_ControlPickerViewState:
-    m_AdvancedDropdownState:
-      states: []
-    m_ManualPathEditMode: 0
-  m_ActionAssetManager:
-    m_AssetObjectForEditing: {fileID: 0}
-    m_ImportedAssetObject: {fileID: -944628639613478452, guid: 82711c97d70f8fb45bca3d9e0608130c, type: 3}
-    m_AssetGUID: 82711c97d70f8fb45bca3d9e0608130c
-    m_ImportedAssetJson: "{\n    \"name\": \"Input\",\n    \"maps\": [\n        {\n           
-      \"name\": \"Gameplay\",\n            \"id\": \"b4e370d3-c97a-4be3-b6e6-c660261b2809\",\n           
-      \"actions\": [\n                {\n                    \"name\": \"Movement\",\n                   
-      \"type\": \"Value\",\n                    \"id\": \"9ffd1313-5167-42a4-8c61-324c34510c47\",\n                   
-      \"expectedControlType\": \"Vector2\",\n                    \"processors\":
-      \"\",\n                    \"interactions\": \"\",\n                    \"initialStateCheck\":
-      true\n                },\n                {\n                    \"name\":
-      \"DropBomb\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"7396a8d9-3f84-4d18-9901-572365326cb2\",\n                    \"expectedControlType\":
-      \"Button\",\n                    \"processors\": \"\",\n                   
-      \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
-      }\n            ],\n            \"bindings\": [\n                {\n                   
-      \"name\": \"Controller1\",\n                    \"id\": \"c4e266b4-03fe-41fb-90ef-b7f8ff27a380\",\n                   
-      \"path\": \"2DVector\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
-      \"action\": \"Movement\",\n                    \"isComposite\": true,\n                   
-      \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"up\",\n                    \"id\": \"70cc0df1-6b47-499c-95a1-25f1b5a1185a\",\n                   
-      \"path\": \"<Gamepad>/leftStick/up\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"Controller1\",\n                    \"action\": \"Movement\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"down\",\n                   
-      \"id\": \"b312f6c4-46de-4478-bf9b-76d73ee0014c\",\n                    \"path\":
-      \"<Gamepad>/leftStick/down\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"Controller1\",\n                   
-      \"action\": \"Movement\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"left\",\n                    \"id\": \"4c09ea1e-89c8-4eed-8e42-de84b8015e6a\",\n                   
-      \"path\": \"<Gamepad>/leftStick/left\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"Controller1\",\n                    \"action\": \"Movement\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"right\",\n                   
-      \"id\": \"40c43a06-5fb8-4495-8a45-7429d047c5dc\",\n                    \"path\":
-      \"<Gamepad>/leftStick/right\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"Controller1\",\n                   
-      \"action\": \"Movement\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"Controller2\",\n                    \"id\": \"120badbf-b30e-4004-86ef-624db290a0e0\",\n                   
-      \"path\": \"2DVector\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
-      \"action\": \"Movement\",\n                    \"isComposite\": true,\n                   
-      \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"up\",\n                    \"id\": \"e50994a4-5db4-4d91-ba36-4d7a9db078a2\",\n                   
-      \"path\": \"<Gamepad>/leftStick/up\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"Controller2\",\n                    \"action\": \"Movement\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"down\",\n                   
-      \"id\": \"c0ded7d7-0951-47f5-93be-dcb9ae105844\",\n                    \"path\":
-      \"<Gamepad>/leftStick/down\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"Controller2\",\n                   
-      \"action\": \"Movement\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"left\",\n                    \"id\": \"a555fb5c-3f66-421f-85cd-0779558fc919\",\n                   
-      \"path\": \"<Gamepad>/leftStick/left\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"Controller2\",\n                    \"action\": \"Movement\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"right\",\n                   
-      \"id\": \"9cc2db6f-918e-4c7f-b91d-299e644a6809\",\n                    \"path\":
-      \"<Gamepad>/leftStick/right\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"Controller2\",\n                   
-      \"action\": \"Movement\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"\",\n                    \"id\": \"66f54ba7-fd7a-46bc-993e-8a8cdd4916fa\",\n                   
-      \"path\": \"<Gamepad>/buttonWest\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \"Controller1\",\n                    \"action\": \"DropBomb\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": false\n               
-      },\n                {\n                    \"name\": \"\",\n                   
-      \"id\": \"4a57a0a6-901a-41d3-9cea-7f6b4d6cb638\",\n                    \"path\":
-      \"<Gamepad>/buttonWest\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"Controller2\",\n                   
-      \"action\": \"DropBomb\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": false\n                }\n            ]\n        }\n   
-      ],\n    \"controlSchemes\": [\n        {\n            \"name\": \"Controller1\",\n           
-      \"bindingGroup\": \"Controller1\",\n            \"devices\": [\n               
-      {\n                    \"devicePath\": \"<Gamepad>\",\n                   
-      \"isOptional\": false,\n                    \"isOR\": false\n               
-      }\n            ]\n        },\n        {\n            \"name\": \"Controller2\",\n           
-      \"bindingGroup\": \"Controller2\",\n            \"devices\": [\n               
-      {\n                    \"devicePath\": \"<Gamepad>\",\n                   
-      \"isOptional\": false,\n                    \"isOR\": false\n               
-      }\n            ]\n        }\n    ]\n}"
-    m_IsDirty: 0
-  m_Toolbar:
-    m_IsDirty: 0
-    m_SelectedControlSchemeIndex: -1
-    m_SelectedDeviceRequirementIndex: -1
-    m_ControlSchemes:
-    - m_Name: Controller1
-      m_BindingGroup: Controller1
-      m_DeviceRequirements:
-      - m_ControlPath: <Gamepad>
-        m_Flags: 0
-    - m_Name: Controller2
-      m_BindingGroup: Controller2
-      m_DeviceRequirements:
-      - m_ControlPath: <Gamepad>
-        m_Flags: 0
-    m_SearchText: 
-  m_DirtyTitle:
-    m_Text: (*) Input (Input Actions)
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Title:
-    m_Text: Input (Input Actions)
-    m_Image: {fileID: 0}
-    m_Tooltip: 
---- !u!114 &17
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -595,7 +330,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &18
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,9 +361,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c620000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 32fbffffe85f0000
+      m_SelectedIDs: a8360d00
+      m_LastClickedID: 865960
+      m_ExpandedIDs: 641bf5ffac22f5ff1217f6ffaa2bf6ff8c79f6ffea79f6ff3645f7ff666af7ffce96f7ff60acf7fff0c0f7ff80d5f7ffb6d9f7ff6aeff7ff8004f8ff8a05f8ffce05f8ffa606f8fff406f8ff940cf8ff240df8ffd423f8ff6a2ef8ff4886feff5286feffd48afeffde8afeffc2a6feffcca6feff74b1ffff7eb1ffff62d7ffff6cd7ffffc2d7ffffccd7ffff42d9ffff4cd9ffff32fbffff1c5d0000885e0000945e0000fa5f00001ef80b0080fe0b00b4030c0038060c0058060c0024070c00a4380c00c2380c00e2380c00aa390c00ae390c003c360d0048360d0088360d0090360d00a8360d00ac360d00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -644,7 +379,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 11}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -652,7 +387,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &19
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -674,7 +409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 336
     y: 80.8
-    width: 1038.8
+    width: 1038
     height: 573.4
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -685,8 +420,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.599976}
+      snapOffset: {x: -100, y: -25.599976}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -707,7 +442,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -877,9 +612,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.9744015, y: 4.4022923, z: -12.329673}
+    m_Target: {x: 447.89328, y: 171.83926, z: 122.89812}
     speed: 2
-    m_Value: {x: -3.9744015, y: 4.4022923, z: -12.329673}
+    m_Value: {x: 447.89328, y: 171.83926, z: 122.89812}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -926,22 +661,22 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.021309739, y: -0.0053995377, z: 0.00006097359, w: -0.9998166}
+    m_Target: {x: -0.0073000616, y: -0.3699189, z: 0.0027802226, w: -0.92911834}
     speed: 2
-    m_Value: {x: -0.021308498, y: -0.0053992234, z: 0.000060970044, w: -0.9997584}
+    m_Value: {x: -0.0072994707, y: -0.36988896, z: 0.0027799977, w: -0.9290431}
   m_Size:
-    m_Target: 0.85358405
+    m_Target: 233.02965
     speed: 2
-    m_Value: 0.85358405
+    m_Value: 233.02965
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
-    m_SpeedMin: 0.001
-    m_SpeedMax: 2
+    m_Speed: 21.17
+    m_SpeedNormalized: 0
+    m_SpeedMin: 21.17
+    m_SpeedMax: 22.17
     m_EasingEnabled: 1
     m_EasingDuration: 0.4
     m_AccelerationEnabled: 1
@@ -957,7 +692,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -977,9 +712,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1376.8
+    x: 1376
     y: 80.8
-    width: 719.6
+    width: 720.3999
     height: 573.4
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -991,7 +726,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 719.6, y: 405}
+  m_TargetSize: {x: 720.3999, y: 405}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1006,8 +741,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -287.84
-    m_HBaseRangeMax: 287.84
+    m_HBaseRangeMin: -288.15997
+    m_HBaseRangeMax: 288.15997
     m_VBaseRangeMin: -162
     m_VBaseRangeMax: 162
     m_HAllowExceedBaseRangeMin: 1
@@ -1027,29 +762,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 719.6
+      width: 720.3999
       height: 552.4
-    m_Scale: {x: 1.1919054, y: 1.1919038}
-    m_Translation: {x: 359.8, y: 276.2}
+    m_Scale: {x: 1.1919053, y: 1.1919038}
+    m_Translation: {x: 360.19998, y: 276.2}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -301.8696
+      x: -302.2052
       y: -231.73012
-      width: 603.7392
+      width: 604.4104
       height: 463.46024
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 899.5, y: 716.75}
+  m_LastWindowPixelSize: {x: 900.4999, y: 716.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &21
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1090,22 +825,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\zNathan\Bomberman
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c620000
-    m_LastClickedID: 25164
-    m_ExpandedIDs: 00000000086200000a62000000ca9a3bffffff7f
+    m_SelectedIDs: 20620000
+    m_LastClickedID: 25120
+    m_ExpandedIDs: 0000000020620000226200003662000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1133,7 +868,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000086200000a620000
+    m_ExpandedIDs: 000000002062000022620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1177,7 +912,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 14}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1189,7 +924,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &22
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CreateRandomBomb : PowerUp
 {
-    public Grid myGrid;
-
     [SerializeField]
     private float minBomb;
 
@@ -23,14 +21,9 @@ public class CreateRandomBomb : PowerUp
 
         for (int i = 0; i < numberBomb; i++)
         {
-            var randomPos = Random.Range(0, myGrid.listDestructibleWall.Count);
+            var randomPos = Random.Range(0, myGrid.allPositionOnMap.Count);
 
-            while (myGrid.listDestructibleWall[randomPos].gameObject.activeSelf )
-            {
-                randomPos = Random.Range(0, myGrid.listDestructibleWall.Count);
-            }
-
-            playerUseBomb.CreateBomb(myGrid.listDestructibleWall[randomPos].transform.position);
+            playerUseBomb.CreateBomb(myGrid.allPositionOnMap[randomPos]);
 
         }
     }

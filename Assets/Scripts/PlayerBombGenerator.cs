@@ -54,9 +54,12 @@ public class PlayerBombGenerator : MonoBehaviour
 
     public void InvokeBomb(InputAction.CallbackContext context)
     {
-        CreateBomb(new Vector2(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y)));
-        _canUseBomb = false;
-        _timerBomb = 0;
+        if (context.action.triggered && _canUseBomb)
+        {
+            CreateBomb(new Vector2(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y)));
+            _canUseBomb = false;
+            _timerBomb = 0;
+        }
     }
 
     public void CreateBomb(Vector2 position)
@@ -69,7 +72,7 @@ public class PlayerBombGenerator : MonoBehaviour
     public void GetPowerUpBomb(float Time)
     {
         _forceAmountBomb = _startForceAmountBomb * 2;
-        _lifeSpanBomb = _startLifeSpanBomb * 2;
+        _lifeSpanBomb = _startLifeSpanBomb / 2;
         Invoke("ResetVar", Time);
     }
     

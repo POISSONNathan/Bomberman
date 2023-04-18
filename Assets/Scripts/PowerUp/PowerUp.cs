@@ -12,6 +12,9 @@ public class PowerUp : MonoBehaviour
     private bool respawn;
 
     public float timePowerUp;
+
+    public Grid myGrid;
+
     public void MyUpdate()
     {
         if (respawn)
@@ -26,7 +29,6 @@ public class PowerUp : MonoBehaviour
         }
 
         transform.Rotate(1f, -1f, 0f, Space.Self);
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,6 +38,10 @@ public class PowerUp : MonoBehaviour
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             respawn = true;
             PlayerBombGenerator playerUseBomb = collision.GetComponent<PlayerBombGenerator>();
+
+            int randomPowerUpPos = Random.Range(0, myGrid.allPositionOnMap.Count);
+            transform.position = myGrid.allPositionOnMap[randomPowerUpPos];
+
             AddEffect(playerUseBomb);
         }
     }

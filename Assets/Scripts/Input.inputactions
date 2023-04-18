@@ -138,7 +138,7 @@
                 {
                     "name": "",
                     "id": "66f54ba7-fd7a-46bc-993e-8a8cdd4916fa",
-                    "path": "<Gamepad>/buttonWest",
+                    "path": "<Gamepad>/leftStickPress",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller1",
@@ -149,7 +149,7 @@
                 {
                     "name": "",
                     "id": "4a57a0a6-901a-41d3-9cea-7f6b4d6cb638",
-                    "path": "<Gamepad>/buttonWest",
+                    "path": "<Gamepad>/leftStickPress",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller2",

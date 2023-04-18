@@ -30,7 +30,7 @@ public class BombExplode : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Player":
-                collision.GetComponent<Life>().DeacreaseLife(_lifeSpan + 1 - timer);
+                collision.GetComponent<Life>().DeacreaseLife(_lifeSpan + 0.5f - timer);
                 Destroy(gameObject);
                 break;
 
