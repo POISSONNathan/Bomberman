@@ -18,10 +18,8 @@ public class Life : MonoBehaviour
 
     private Vector2 _startPos;
 
-    [SerializeField]
-    private int _globalMaxLife;
+    private int _globalMaxLife = 3;
 
-    [SerializeField]
     private int _globalLife;
 
     void Start()

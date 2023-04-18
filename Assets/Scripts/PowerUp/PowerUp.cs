@@ -27,7 +27,6 @@ public class PowerUp : MonoBehaviour
                 respawn = false;
             }
         }
-
         transform.Rotate(1f, -1f, 0f, Space.Self);
     }
 
@@ -35,12 +34,16 @@ public class PowerUp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && gameObject.GetComponent<MeshRenderer>().enabled == true)
         {
+            myGrid.allPositionOnMap.Remove(transform.position);
+
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             respawn = true;
             PlayerBombGenerator playerUseBomb = collision.GetComponent<PlayerBombGenerator>();
 
             int randomPowerUpPos = Random.Range(0, myGrid.allPositionOnMap.Count);
             transform.position = myGrid.allPositionOnMap[randomPowerUpPos];
+
+            myGrid.allPositionOnMap.Add(transform.position);
 
             AddEffect(playerUseBomb);
         }

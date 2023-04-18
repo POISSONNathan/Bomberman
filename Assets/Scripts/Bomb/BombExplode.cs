@@ -13,6 +13,13 @@ public class BombExplode : MonoBehaviour
     [SerializeField]
     private Renderer mRenderer;
 
+    private Grid _myGrid;
+
+    private void Start()
+    {
+        _myGrid = FindObjectOfType<Grid>();
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -39,6 +46,8 @@ public class BombExplode : MonoBehaviour
                 break;
 
             case "DestructibleWall":
+                _myGrid.allPositionOnMap.Add(collision.gameObject.transform.position);
+
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
                 break;

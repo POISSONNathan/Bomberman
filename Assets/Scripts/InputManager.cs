@@ -16,9 +16,6 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
-        //_movement.x = Input.GetAxis("Horizontal");
-        //_movement.y = Input.GetAxis("Vertical");
-
         float moveSpeed = _speed + Time.fixedDeltaTime;
         playerRigidbody.MovePosition(playerRigidbody.position + _movement * moveSpeed) ;
     }

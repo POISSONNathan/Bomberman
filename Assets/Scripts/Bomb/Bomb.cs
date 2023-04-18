@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Bomb : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class Bomb : MonoBehaviour
     public GameObject bombExplode;
 
     public float forceAmount;
+
+    private Grid _myGrid;
+
+    private void Start()
+    {
+        _myGrid = FindObjectOfType<Grid>();
+    }
 
     void Update()
     {
@@ -47,6 +55,13 @@ public class Bomb : MonoBehaviour
 
     private void DestroyGameObject()
     {
+        _myGrid.allPositionOnMap.Add(transform.position);
+
         Destroy(gameObject);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GetComponent<BoxCollider2D>().isTrigger = false;
     }
 }
