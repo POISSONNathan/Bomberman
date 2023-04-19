@@ -6,10 +6,8 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Grid : MonoBehaviour
 {
-    [SerializeField]
-    private int _minWallDestructible;
-    [SerializeField]
-    private int _maxWallDestructible;
+    public int _minWallDestructible;
+    public int _maxWallDestructible;
 
     public GameObject destructibleWall;
     public GameObject ubdestructibleWall;
@@ -31,24 +29,35 @@ public class Grid : MonoBehaviour
 
     public List<GameObject> listPowerUp;
 
-    [SerializeField]
     private int _numberOfEachPowerUp;
 
     [SerializeField]
     private int _timeToReCreateWallOnMap;
-    [SerializeField]
+
     private int _numberToReCreateWallOnMap;
 
     [SerializeField]
     private GameObject _star;
 
     private gameManager _myGameManager;
+
+    private int _numberWallMaxOnMap;
+    private int _numberWallOnMap;
+
     void Start()
     {
         _myGameManager = FindObjectOfType<gameManager>();
 
         numberWallX = _myGameManager.sizeWallX;
         numberWallY = _myGameManager.sizeWallY;
+
+        _numberToReCreateWallOnMap = (_myGameManager.numberCaseInMap / 50) + 1;
+        _numberOfEachPowerUp = (_myGameManager.numberCaseInMap / 50) + 1;
+
+        _minWallDestructible = _myGameManager.numberCaseInMap / 5;
+        _maxWallDestructible = _myGameManager.numberCaseInMap / 4;
+
+        _numberWallMaxOnMap = _myGameManager.numberCaseInMap / 3;
 
         if (_myGameManager.gameMode == "Solo")
         {
@@ -166,7 +175,7 @@ public class Grid : MonoBehaviour
         {
             int randomPosInList = Random.Range(0, allPositionOnMap.Count);
             Instantiate(destructibleWall, allPositionOnMap[randomPosInList], Quaternion.identity, transform);
-
+            _numberWallOnMap++;
             allPositionOnMap.Remove(allPositionOnMap[randomPosInList]);
         }
 
@@ -177,6 +186,7 @@ public class Grid : MonoBehaviour
             {
                 int randomPowerUpPos = Random.Range(0, allPositionOnMap.Count);
                 Instantiate(listPowerUp[j], allPositionOnMap[randomPowerUpPos], Quaternion.identity);
+                allPositionOnMap.Remove(allPositionOnMap[randomPowerUpPos]);
             }
         }
     }
@@ -193,12 +203,15 @@ public class Grid : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(_timeToReCreateWallOnMap);
-
-            for (int i = 0; i < _numberToReCreateWallOnMap; i++)
+            if (_numberWallOnMap <= _numberWallMaxOnMap)
             {
-                int randomPosInList = Random.Range(0, allPositionOnMap.Count);
-                Instantiate(destructibleWall, allPositionOnMap[randomPosInList], Quaternion.identity, transform);
-                allPositionOnMap.Remove(allPositionOnMap[randomPosInList]);
+                for (int i = 0; i < _numberToReCreateWallOnMap; i++)
+                {
+                    int randomPosInList = Random.Range(0, allPositionOnMap.Count);
+                    Instantiate(destructibleWall, allPositionOnMap[randomPosInList], Quaternion.identity, transform);
+                    allPositionOnMap.Remove(allPositionOnMap[randomPosInList]);
+                    _numberWallOnMap++;
+                }
             }
         }
     }

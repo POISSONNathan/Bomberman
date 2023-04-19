@@ -15,6 +15,8 @@ public class gameManager : MonoBehaviour
     public float timeSoloMode = 30;
     void Start()
     {
+        numberCaseInMap = sizeWallX * sizeWallY;
+
         DontDestroyOnLoad(gameObject);
         SceneManager.LoadScene("Menu");
     }

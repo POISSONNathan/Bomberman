@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class CreateRandomBomb : PowerUp
 {
-    [SerializeField]
-    private float minBomb;
+    public float _numberBombToCreate;
 
-    [SerializeField]
+    private gameManager _myGameManager;
 
-    private float maxBomb;
+    private void Start()
+    {
+        _myGameManager = FindObjectOfType<gameManager>();
+
+        _numberBombToCreate = _myGameManager.numberCaseInMap / 15;
+    }
     void Update()
     {
         MyUpdate();   
@@ -17,9 +21,7 @@ public class CreateRandomBomb : PowerUp
 
      public override void AddEffect(PlayerBombGenerator playerUseBomb)
      {
-        var numberBomb = Random.Range(minBomb, maxBomb);
-
-        for (int i = 0; i < numberBomb; i++)
+        for (int i = 0; i < _numberBombToCreate; i++)
         {
             var randomPos = Random.Range(0, myGrid.allPositionOnMap.Count);
 

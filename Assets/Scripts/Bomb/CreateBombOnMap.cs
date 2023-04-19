@@ -14,16 +14,20 @@ public class CreateBombOnMap : MonoBehaviour
     [SerializeField]
     private int _delayBetweenCreate;
 
-    [SerializeField]
-    private int _numberBombToCreateEachTime;
+    private gameManager _myGameManager;
 
-    [SerializeField]
+    private int _numberBombToCreateEachTime;
     private int _maxBombOnMap;
 
     public int numberBombOnMap;
     
     void Start()
     {
+        _myGameManager = FindObjectOfType<gameManager>();
+
+        _numberBombToCreateEachTime = (_myGameManager.numberCaseInMap / 50) + 1;
+        _maxBombOnMap = _numberBombToCreateEachTime * 2;
+
         StartCoroutine(GenerateBomb());
     }
 

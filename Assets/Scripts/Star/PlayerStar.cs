@@ -8,7 +8,7 @@ public class PlayerStar : MonoBehaviour
 {
     public int numberStar;
 
-    private int _numberStarMax;
+    public float _numberStarMax;
 
     [SerializeField]
     private Text _textStar;
@@ -18,11 +18,15 @@ public class PlayerStar : MonoBehaviour
     private void Start()
     {
         _myGameManager = FindObjectOfType<gameManager>();
+
+        _numberStarMax = _myGameManager.timeSoloMode / 6;
+
+        _textStar.text = numberStar.ToString() + "/" + _numberStarMax.ToString();
     }
     public void GetStar()
     {
         numberStar++;
-        _textStar.text = numberStar.ToString();
+        _textStar.text = numberStar.ToString() + "/" + _numberStarMax.ToString();
 
         if (numberStar >= _numberStarMax)
         {

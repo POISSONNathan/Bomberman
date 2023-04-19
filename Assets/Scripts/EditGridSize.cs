@@ -32,28 +32,28 @@ public class EditGridSize : MonoBehaviour
 
     public void addXValue()
     {
-        _myGameManager.sizeWallX++;
+        _myGameManager.sizeWallX += 2;
         _textToEdit.text = "X : " + _myGameManager.sizeWallX.ToString();
     }
     public void removeXValue()
     {
         if (_myGameManager.sizeWallX > 5)
         {
-            _myGameManager.sizeWallX--;
+            _myGameManager.sizeWallX -= 2;
             _textToEdit.text = "X : " + _myGameManager.sizeWallX.ToString();
         }
     }
 
     public void addYValue()
     {
-        _myGameManager.sizeWallY++;
+        _myGameManager.sizeWallY += 2;
         _textToEdit.text = "Y : " + _myGameManager.sizeWallY.ToString();
     }
     public void removeYValue()
     {
         if (_myGameManager.sizeWallY > 5)
         {
-            _myGameManager.sizeWallY--;
+            _myGameManager.sizeWallY -= 2;
             _textToEdit.text = "Y : " + _myGameManager.sizeWallY.ToString();
         }
     }

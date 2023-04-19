@@ -259,7 +259,7 @@ RectTransform:
   m_GameObject: {fileID: 222163734}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9233913, y: 2.9233913, z: 2.9233913}
+  m_LocalScale: {x: 1.0031061, y: 1.0031061, z: 1.0031061}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2057144283}
@@ -267,7 +267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -694.1632, y: 222.24951}
+  m_AnchoredPosition: {x: -837, y: 370}
   m_SizeDelta: {x: 160, y: 111.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222163736
@@ -292,12 +292,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 76
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 63
-    m_Alignment: 0
+    m_MaxSize: 102
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1992,7 +1992,7 @@ GameObject:
   - component: {fileID: 1812324654}
   - component: {fileID: 1812324653}
   m_Layer: 5
-  m_Name: BombUiPowerUpPl1 (1)
+  m_Name: StarImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2007,7 +2007,7 @@ RectTransform:
   m_GameObject: {fileID: 1812324651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1820037, y: 1.1820037, z: 1.1820037}
+  m_LocalScale: {x: 0.8919498, y: 0.8919498, z: 0.8919498}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2057144283}
@@ -2015,7 +2015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -784.649, y: 329.21512}
+  m_AnchoredPosition: {x: -834, y: 289}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812324653
