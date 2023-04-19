@@ -17,8 +17,8 @@ public class Grid : MonoBehaviour
 
     public List<Vector2> allPositionOnMap;
 
-    public int numberWallX;
-    public int numberWallY;
+    private int numberWallX;
+    private int numberWallY;
 
     public int numberPlayer;
 
@@ -39,8 +39,23 @@ public class Grid : MonoBehaviour
     [SerializeField]
     private int _numberToReCreateWallOnMap;
 
+    [SerializeField]
+    private GameObject _star;
+
+    private gameManager _myGameManager;
     void Start()
     {
+        _myGameManager = FindObjectOfType<gameManager>();
+
+        numberWallX = _myGameManager.sizeWallX;
+        numberWallY = _myGameManager.sizeWallY;
+
+        if (_myGameManager.gameMode == "Solo")
+        {
+            numberWallX = 13;
+            numberWallY = 9;
+        }
+
         // all vector in grid
         for (int i = 0; i < numberWallX; i++)
         {
@@ -86,7 +101,7 @@ public class Grid : MonoBehaviour
                 break;
         }
 
-        StartCoroutine(createWall());
+        StartCoroutine(CreateWall());
 
         GenerateDestructibleWall();
     }
@@ -135,6 +150,11 @@ public class Grid : MonoBehaviour
                 Instantiate(wallAroudMap, new Vector2(allPositionOnMap[i].x, allPositionOnMap[i].y + 1), Quaternion.identity, transform);
             }
         }
+
+        if (_myGameManager.gameMode == "Solo")
+        {
+            CreateStar();
+        }
     }
 
     private void GenerateDestructibleWall()
@@ -161,7 +181,14 @@ public class Grid : MonoBehaviour
         }
     }
 
-    IEnumerator createWall()
+    private void CreateStar()
+    {
+        int randomStarPos = Random.Range(0, allPositionOnMap.Count);
+        Instantiate(_star, allPositionOnMap[randomStarPos], Quaternion.identity);
+        allPositionOnMap.Remove(allPositionOnMap[randomStarPos]);
+    }
+
+    IEnumerator CreateWall()
     {
         while (true)
         {

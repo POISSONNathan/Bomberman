@@ -5,13 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class StartScene : MonoBehaviour
 {
-    public void StartSoloScene13x9()
+    [SerializeField]
+    private gameManager _myGameManager;
+
+    private void Start()
     {
-        SceneManager.LoadScene("Solo_13x9");
+        _myGameManager = FindObjectOfType<gameManager>();
     }
 
-    public void StartMultiScene13x9()
+    public void StartSoloScene()
     {
-        SceneManager.LoadScene("Multi_13x9");
+        _myGameManager.gameMode = "Solo";
+        SceneManager.LoadScene(_myGameManager.gameMode);
+    }
+
+    public void StartMultiScene()
+    {
+        _myGameManager.gameMode = "Multi";
+        SceneManager.LoadScene(_myGameManager.gameMode);
     }
 }

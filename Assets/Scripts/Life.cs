@@ -18,8 +18,6 @@ public class Life : MonoBehaviour
 
     private Vector2 _startPos;
 
-    private int _globalMaxLife = 3;
-
     private int _globalLife;
 
     void Start()
@@ -27,7 +25,7 @@ public class Life : MonoBehaviour
         _startPos = transform.position;
         ResetLife();
 
-        _globalLife = _globalMaxLife;
+        _globalLife = _listGlobalLifeImage.Count;   
         UpdateHeartUi(_listGlobalLifeImage.Count, false);
         UpdateHeartUi(_globalLife, true);
     }
@@ -49,7 +47,7 @@ public class Life : MonoBehaviour
 
             _globalLife -= 1;
 
-            if (_globalLife <= -1)
+            if (_globalLife <= 0)
             {
                 SceneManager.LoadScene("Menu");
             }
