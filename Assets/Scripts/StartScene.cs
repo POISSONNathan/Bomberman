@@ -15,9 +15,8 @@ public class StartScene : MonoBehaviour
 
     public void StartSoloScene()
     {
-        _myGameManager.numberCaseInMap = _myGameManager.sizeWallX * _myGameManager.sizeWallY;
-
         _myGameManager.gameMode = "Solo";
+        _myGameManager.numberCaseInMap = 117;
         SceneManager.LoadScene(_myGameManager.gameMode);
     }
 
