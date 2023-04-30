@@ -29,6 +29,8 @@ public class TimerSoloMode : MonoBehaviour
     {
         _timerSec -= Time.deltaTime;
 
+        _myGameManager.endTimeSoloMode -= Time.deltaTime;
+
         if (_timerSec > 10)
         {
             _timerUI.text = _timerMin.ToString() + " : " + _timerSec.ToString("F0");
@@ -45,8 +47,9 @@ public class TimerSoloMode : MonoBehaviour
         }
 
         if (_timerMin < 0)
-        { 
-            SceneManager.LoadScene("Menu");
+        {
+            _myGameManager.soloGameModeWin = false;
+            SceneManager.LoadScene("EndScene");
         }
     }
 }

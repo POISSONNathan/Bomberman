@@ -20,8 +20,12 @@ public class Life : MonoBehaviour
 
     private int _globalLife;
 
+    private gameManager _myGameManager;
+
     void Start()
     {
+        _myGameManager = FindObjectOfType<gameManager>();
+
         _startPos = transform.position;
         ResetLife();
 
@@ -49,7 +53,16 @@ public class Life : MonoBehaviour
 
             if (_globalLife <= 0)
             {
-                SceneManager.LoadScene("Menu");
+                if (this.gameObject.name == "Player1")
+                {
+                    _myGameManager.nameWinnerMulti = "Player 2 (the top right player)";
+                }
+                else
+                {
+                    _myGameManager.nameWinnerMulti = "Player 1 (the bottom left player)";
+                }
+
+                SceneManager.LoadScene("EndScene");
             }
 
             UpdateHeartUi(_listGlobalLifeImage.Count, false);

@@ -30,7 +30,8 @@ public class PlayerStar : MonoBehaviour
 
         if (numberStar >= _numberStarMax)
         {
-            SceneManager.LoadScene("Menu");
+            _myGameManager.soloGameModeWin = true;
+            SceneManager.LoadScene("EndScene");
         }
     }
 }

@@ -12,7 +12,12 @@ public class gameManager : MonoBehaviour
 
     public int numberCaseInMap;
 
+    public bool soloGameModeWin;
+
     public float timeSoloMode = 30;
+    public float endTimeSoloMode;
+
+    public string nameWinnerMulti;
     void Start()
     {
         numberCaseInMap = sizeWallX * sizeWallY;

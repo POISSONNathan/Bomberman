@@ -17,6 +17,8 @@ public class StartScene : MonoBehaviour
     {
         _myGameManager.gameMode = "Solo";
         _myGameManager.numberCaseInMap = 117;
+        _myGameManager.soloGameModeWin = false;
+        _myGameManager.endTimeSoloMode = _myGameManager.timeSoloMode;
         SceneManager.LoadScene(_myGameManager.gameMode);
     }
 
