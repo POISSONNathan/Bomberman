@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Solo.unity
     guid: 193cd6d23f4405342a77dd8d0121428f
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 2578be3716db77644818263b48c68fdd
+  - enabled: 1
+    path: Assets/Scenes/PreloadScene.unity
+    guid: 6b12ee9c9e17b1b43819004f81dd90da
   m_configObjects: {}
