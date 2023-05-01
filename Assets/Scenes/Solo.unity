@@ -367,15 +367,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8656006832597534794, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: 1280446133571650962, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: 5314827104435086848, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: 8966527337276733270, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: 856450179442182662, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: -5258973688756752490, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: 6848293311138393966, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: 7420331253886010339, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
-  - {fileID: -6113373783991598550, guid: e185798c856317d4685cbb3300e2d46d, type: 3}
+  - {fileID: 2100000, guid: b4c489ed360654746b9d3a4c265e267e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -710,8 +702,6 @@ MonoBehaviour:
   _myGrid: {fileID: 961618738}
   _bombToTake: {fileID: 2751046872061470566, guid: af05afc06f43f8a4da849f35df2d97c7, type: 3}
   _delayBetweenCreate: 6
-  _numberBombToCreateEachTime: 2
-  _maxBombOnMap: 3
   numberBombOnMap: 0
 --- !u!1 &705507993
 GameObject:
@@ -1091,9 +1081,7 @@ MonoBehaviour:
   listPowerUp:
   - {fileID: 1593279380}
   - {fileID: 1780086799}
-  _numberOfEachPowerUp: 0
   _timeToReCreateWallOnMap: 5
-  _numberToReCreateWallOnMap: 2
   _star: {fileID: 4929349933464190086, guid: 218d07c2d22920c4b8f8a543d624a10a, type: 3}
 --- !u!4 &961618739
 Transform:
@@ -1786,8 +1774,7 @@ MonoBehaviour:
   _timeToReapear: 8
   timePowerUp: 0
   myGrid: {fileID: 961618738}
-  minBomb: 2
-  maxBomb: 7
+  _numberBombToCreate: 0
 --- !u!1001 &1780086798
 PrefabInstance:
   m_ObjectHideFlags: 0

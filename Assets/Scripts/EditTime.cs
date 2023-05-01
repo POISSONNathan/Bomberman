@@ -9,17 +9,22 @@ public class EditTime : MonoBehaviour
     private TextMeshProUGUI _myTextTime;
 
     private gameManager _myGameManager;
+
+    private int numberStar;
+
     private void Start()
     {
         _myGameManager = FindObjectOfType<gameManager>();
 
-        _myTextTime.text = "Find many stars in " + _myGameManager.timeSoloMode + " seconds (30 sec)";
+        numberStar = 5;
+        _myTextTime.text = "Find " + numberStar + " stars in " + _myGameManager.timeSoloMode + " seconds (30 sec minimum)";
     }
 
     public void AddTime()
     {
         _myGameManager.timeSoloMode += 30;
-        _myTextTime.text = "Find many stars in " + _myGameManager.timeSoloMode + " seconds (30 sec)";
+        numberStar += 5;
+        _myTextTime.text = "Find " + numberStar + " stars in " + _myGameManager.timeSoloMode + " seconds (30 sec minimum)";
     }
 
     public void RemoveTime()
@@ -27,7 +32,8 @@ public class EditTime : MonoBehaviour
         if (_myGameManager.timeSoloMode > 30)
         {
             _myGameManager.timeSoloMode -= 30;
-            _myTextTime.text = "Find many stars in " + _myGameManager.timeSoloMode + " seconds (30 sec)";
+            numberStar -= 5;
+            _myTextTime.text = "Find " + numberStar + " stars in " + _myGameManager.timeSoloMode + " seconds (30 sec minimum)";
         }
     }
 }

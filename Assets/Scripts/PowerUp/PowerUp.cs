@@ -22,6 +22,11 @@ public class PowerUp : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= _timeToReapear)
             {
+                int randomPowerUpPos = Random.Range(0, myGrid.allPositionOnMap.Count);
+                transform.position = myGrid.allPositionOnMap[randomPowerUpPos];
+
+                myGrid.allPositionOnMap.Add(transform.position);
+
                 timer = 0;
                 gameObject.GetComponent<MeshRenderer>().enabled = true;
                 respawn = false;
@@ -40,10 +45,6 @@ public class PowerUp : MonoBehaviour
             respawn = true;
             PlayerBombGenerator playerUseBomb = collision.GetComponent<PlayerBombGenerator>();
 
-            int randomPowerUpPos = Random.Range(0, myGrid.allPositionOnMap.Count);
-            transform.position = myGrid.allPositionOnMap[randomPowerUpPos];
-
-            myGrid.allPositionOnMap.Add(transform.position);
 
             AddEffect(playerUseBomb);
         }
